@@ -1,0 +1,246 @@
+/* Home.css */
+
+/* Background */
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #f9fafb, #e5e7eb);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.home-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1f2937;
+}
+
+.add-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Filter Section */
+.filter-box {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid #e5e7eb;
+}
+
+.filter-box h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  max-width: 1100px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.filter-grid select,
+.filter-grid input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.filter-reset {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.filter-reset button {
+  background: #e5e7eb;
+  color: #374151;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.filter-reset button:hover {
+  background: #d1d5db;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Table */
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.transaction-table th {
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px;
+}
+
+.transaction-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.transaction-table tr:hover {
+  background: #f0f9ff;
+}
+
+.type-income {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.type-expense {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Empty State */
+.no-data {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Header container */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background: #fff;
+  padding: 1.2rem 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Title styling */
+.home-header h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+/* Buttons container */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Common button styling */
+.header-actions button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Transaction button */
+.add-btn-custom {
+  background: #3b82f6; /* blue */
+}
+.add-btn-custom:hover {
+  background: #2563eb;
+  transform: scale(1.03);
+}
+
+/* View Analytics button */
+.analytics-btn-custom {
+  background: #8b5cf6; /* violet */
+}
+.analytics-btn-custom:hover {
+  background: #7c3aed;
+  transform: scale(1.03);
+}
